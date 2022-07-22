@@ -1,0 +1,27 @@
+#+TITLE:  Doom configuration
+#+AUTHOR: Duncan Mbuli-Robertson
+#+EMAIL: duncanr19@gmail.com
+
+* Basic configuration
+Say my name, say my name
+#+BEGIN_SRC emacs-lisp
+(setq user-full-name "Duncan Mbuli-Robertson"
+      user-mail-address "duncanr19@gmail.com")
+#+END_SRC
+
+* Appearance
+Configure the fonts
+#+BEGIN_SRC emacs-lisp
+(setq doom-font (font-spec :family "Iosevka" :size 14 :weight 'regular))
+#+END_SRC
+
+Configure the theme
+#+BEGIN_SRC emacs-lisp
+(setq doom-theme 'doom-one)
+(setq display-line-numbers-type t)
+#+END_SRC
+* Org
+Sync org files with dropbox
+#+BEGIN_SRC emacs-lisp
+  (setq org-directory "/mnt/c/Users/Duncan/Dropbox/Org")
+#+END_SRC
