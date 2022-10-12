@@ -15,8 +15,11 @@ fi
 # -----------------
 
 export PYENV_ROOT="$HOME/.pyenv"
-export ORG="/mnt/c/Users/Duncan/Dropbox/Org"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export DROPBOX="/mnt/c/users/Duncan/Dropbox"
+export ORG="/mnt/c/users/Duncan/Dropbox/Org"
+path+="$PYENV_ROOT/bin"
+path+="$HOME/bin"
+path+="$HOME/doomemacs/bin"
 eval "$(pyenv init --path)"
 alias config='/usr/bin/git --git-dir=/home/duncan/.dotfiles.git/ --work-tree=/home/duncan'
 #
@@ -142,3 +145,4 @@ unset key
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH=/home/duncan/.pyenv/shims:/home/duncan/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/dunca/AppData/Local/Microsoft/WindowsApps:/home/duncan/.pyenv/bin:/home/duncan/bin:/home/duncan/doomemacs/bin:~/bin/annovar
